@@ -98,6 +98,126 @@
         </div>
         <div class="archive">
             <h1 class="page__title">CV</h1>
+            <h1 id="work-experience">Work experience</h1>
+                <ul>
+                    <h3>Applied Scientist Intern - Amazon Web Services (AWS)</h3>
+                    <ul>
+                        The Identity Correctness team is developing a high-performance, 
+                        memory-efficient policy evaluation engine in Rust, moving away 
+                        from their existing solution, Yucca, which is implemented in Dafny 
+                        and compiled to Java. Initially, they considered compiling a Dafny 
+                        rewrite of Yucca to Rust but are now exploring Rust verification 
+                        approaches that use the language's borrow checker for more direct 
+                        and robust proofs. They are particularly interested in the Verus Rust verifier,
+                         which simplifies proving Rust code correctness without compiling from Dafny. 
+                         Using Verus could expedite development and improve proof maintainability. During my internship,
+                          I ported two string-matching correctness proofs from Dafny to Verus, 
+                        achieving a 90% reduction in resource count and a 95% decrease in verification time.
+                    </ul>
+                </ul>
+                <ul>
+                    <h3>Visiting Graduate - Argonne National Lab</h3>
+                    <ul>
+                        As a visiting graduate student at Argonne National Lab, I developed a novel SZ 
+                        compressor supporting floating-point error-bounded compression and various compressed-space
+                         operations, including addition, subtraction, negation, multiplication, mean, and variance. 
+                         I successfully tested these operations on scientific datasets, ensuring they met specified error bounds,
+                          and collaborated with researchers to advance data compression and processing techniques.
+                    </ul>
+                </ul>
+                <ul>
+                    <h3>Research Intern - Argonne National Lab</h3>
+                    <ul>
+                        Investigated computation over compressed data in scientific applications
+                         without decompression, addressing inefficiency caused by decompression overhead.
+                    </ul>
+                </ul>
+                </li>
+            
+                <h1 id="publications">Thesis and Research Projects</h1>
+                <ul>
+                    <div class="list__item">
+                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <li>
+                                <h3 class="archive__item-title" itemprop="headline"> <a
+                                        href="https://www.overleaf.com/read/kdrjyvzgsqys" rel="permalink">Assembly code
+                                        optimization verification for RISC-V
+                                        Sep 2022 - Feb 2023 </a></h3>
+                                <p class="archive__item-excerpt" itemprop="description">
+                                <ul>Currently working on top of CASM-Verify tool to perform symbolic verification of
+                                    different
+                                    assembly-optimized code.</ul>
+                                <ul>Building a complete tool including a parser, writing RISC-V assembly codes,
+                                    generating ASTs
+                                    and then creating SMT queries
+                                    to check the equivalence of the codes generated.</ul>
+                                <ul>Testing the tool on RISC-V and dsl codes for security-based algorithms. Code is
+                                    available <a
+                                        href="https://github.com/tripti-agarwal/RISC_V-Symbolic-Verification">here</a></ul>
+                            </li>
+                            </p>
+                            <li>
+                                <h3 class="archive__item-title" itemprop="headline"> <a
+                                        href="https://www.overleaf.com/read/hpsxjwqtbnxh" rel="permalink">Compiler-induced
+                                        Numerical Result-variability Detection in the Compressed Domain
+                                        Mar 2022 - Aug 2022 </a></h3>
+                                <p class="archive__item-excerpt" itemprop="description">
+                                <ul>Investigating the use of lossy data compression to store (intermediate) computational
+                                    results and compare two such compressed
+                                    data sets (the one before optimization and the other after) without decompression. We
+                                    take a recently introduced compressor
+                                    that allows such compressed-domain operations and provides an initial study of its GPU
+                                    parallelization. The paper presents
+                                    fully GPU-based components of a future compiler-flag bisection utility, consisting of a
+                                    GPU-based shallow water simulation as
+                                    a driving example, methods to understand (and trust) compressed-domain operations, and
+                                    parallelization benefits. (previously
+                                    submitted in LCPC workshop which got rejected). We plan to add CPU codes and resubmit as
+                                    a conference paper later.</ul>
+                            </li>
+                            </p>
+    
+                            <li>
+                                <h3 class="archive__item-title" itemprop="headline"> <a
+                                        href="https://ieeexplore.ieee.org/abstract/document/9448469/" rel="permalink">A
+                                        Topological Similarity Measure between Multi-resolution Reeb Spaces </a></h3>
+                                <p class="archive__item-excerpt" itemprop="description">
+                                <ul>
+                                    Creating a data-structure that can capture topological features from multi-field data
+                                    using Reeb Spaces. Dataset is a time
+                                    varying multi-field data. The project is implemented using vtk Python and vtk C++.
+                                </ul>
+                                <ul>Submitted a journal paper at IEEE TVCG [<a
+                                        href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9448469">pdf</a>]. A
+                                    short paper can be found <a href="https://arxiv.org/abs/2008.12567">here</a></ul>
+                                <ul>A complete thesis on Topological Similarity between Multi-field Data <a
+                                        href="https://raw.githubusercontent.com/tripti-agarwal/Masters-Thesis/main/thesis.pdf">pdf</a>
+                                </ul>
+                                </p>
+                            </li>
+    
+                            <li>
+                                <h3 class="archive__item-title" itemprop="headline"> <a
+                                        href="https://link.springer.com/chapter/10.1007/978-3-030-83500-2_11"
+                                        rel="permalink">Topological feature search in time-varying multifield data </a></h3>
+                                <p class="archive__item-excerpt" itemprop="description">
+                                <ul>
+                                    Proposed a similarity metric for two multi-fields between their respective fiber
+                                    component distribution. The project uses Reeb
+                                    Spaces which are projected in range space which is implemented using vtk Python and vtk
+                                    C++.. Dataset: Scission of nucleus
+                                    for Plutonium and Fermium atom, DFT data for Pt-CO bond detection.
+                                </ul>
+                                <ul>Submitted and presented in TopoInVis 2019. <a
+                                        href="https://link.springer.com/chapter/10.1007/978-3-030-83500-2_11">pdf</a></ul>
+                                </p>
+                            </li>
+                        </article>
+                    </div>
+                </ul>
+
+
+
             <h1 id="education">Education</h1>
             <ul>
                 <li>
@@ -121,106 +241,17 @@
                         Graph Theory.</p>
                 </li>
             </ul>
-            <h1 id="publications">Thesis and Research Projects</h1>
-            <ul>
-                <div class="list__item">
-                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                        <li>
-                            <h3 class="archive__item-title" itemprop="headline"> <a
-                                    href="https://www.overleaf.com/read/kdrjyvzgsqys" rel="permalink">Assembly code
-                                    optimization verification for RISC-V
-                                    Sep 2022 - Present </a></h3>
-                            <p class="archive__item-excerpt" itemprop="description">
-                            <ul>Currently working on top of CASM-Verify tool to perform symbolic verification of
-                                different
-                                assembly-optimized code.</ul>
-                            <ul>Building a complete tool including a parser, writing RISC-V assembly codes,
-                                generating ASTs
-                                and then creating SMT queries
-                                to check the equivalence of the codes generated.</ul>
-                            <ul>Testing the tool on RISC-V and dsl codes for security-based algorithms. Code is
-                                available <a
-                                    href="https://github.com/tripti-agarwal/RISC_V-Symbolic-Verification">here</a></ul>
-                        </li>
-                        </p>
-                        <li>
-                            <h3 class="archive__item-title" itemprop="headline"> <a
-                                    href="https://www.overleaf.com/read/hpsxjwqtbnxh" rel="permalink">Compiler-induced
-                                    Numerical Result-variability Detection in the Compressed Domain
-                                    Mar 2022 - Aug 2022 </a></h3>
-                            <p class="archive__item-excerpt" itemprop="description">
-                            <ul>Investigating the use of lossy data compression to store (intermediate) computational
-                                results and compare two such compressed
-                                data sets (the one before optimization and the other after) without decompression. We
-                                take a recently introduced compressor
-                                that allows such compressed-domain operations and provides an initial study of its GPU
-                                parallelization. The paper presents
-                                fully GPU-based components of a future compiler-flag bisection utility, consisting of a
-                                GPU-based shallow water simulation as
-                                a driving example, methods to understand (and trust) compressed-domain operations, and
-                                parallelization benefits. (previously
-                                submitted in LCPC workshop which got rejected). We plan to add CPU codes and resubmit as
-                                a conference paper later.</ul>
-                        </li>
-                        </p>
-
-                        <li>
-                            <h3 class="archive__item-title" itemprop="headline"> <a
-                                    href="https://ieeexplore.ieee.org/abstract/document/9448469/" rel="permalink">A
-                                    Topological Similarity Measure between Multi-resolution Reeb Spaces </a></h3>
-                            <p class="archive__item-excerpt" itemprop="description">
-                            <ul>
-                                Creating a data-structure that can capture topological features from multi-field data
-                                using Reeb Spaces. Dataset is a time
-                                varying multi-field data. The project is implemented using vtk Python and vtk C++.
-                            </ul>
-                            <ul>Submitted a journal paper at IEEE TVCG [<a
-                                    href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9448469">pdf</a>]. A
-                                short paper can be found <a href="https://arxiv.org/abs/2008.12567">here</a></ul>
-                            <ul>A complete thesis on Topological Similarity between Multi-field Data <a
-                                    href="https://raw.githubusercontent.com/tripti-agarwal/Masters-Thesis/main/thesis.pdf">pdf</a>
-                            </ul>
-                            </p>
-                        </li>
-
-                        <li>
-                            <h3 class="archive__item-title" itemprop="headline"> <a
-                                    href="https://link.springer.com/chapter/10.1007/978-3-030-83500-2_11"
-                                    rel="permalink">Topological feature search in time-varying multifield data </a></h3>
-                            <p class="archive__item-excerpt" itemprop="description">
-                            <ul>
-                                Proposed a similarity metric for two multi-fields between their respective fiber
-                                component distribution. The project uses Reeb
-                                Spaces which are projected in range space which is implemented using vtk Python and vtk
-                                C++.. Dataset: Scission of nucleus
-                                for Plutonium and Fermium atom, DFT data for Pt-CO bond detection.
-                            </ul>
-                            <ul>Submitted and presented in TopoInVis 2019. <a
-                                    href="https://link.springer.com/chapter/10.1007/978-3-030-83500-2_11">pdf</a></ul>
-                            </p>
-                        </li>
-                    </article>
-                </div>
-            </ul>
-            <h1 id="fellowships-and-awards">Academic Projects</h1>
-            <ul>
+            
+            
+            
 
 
 
 
                 <!--<li>2021: <a href="https://www.krellinst.org/csgf/about-doe-csgf/news-events/2021-incoming-class">Department of Energy Computational Science Graduate Fellowship</a></li><li>2020: <a href="https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList">National Science Foundation GRFP Honorable Mention</a></li><li>2020: <a href="https://cms.caltech.edu/academics/honors">Thomas A. Tisch Prize for Undergraduate Teaching in Computing and Mathematical Sciences</a></li><li>2019: <a href="https://devpost.com/software/presentr-i72q0y">Caltech Hacktech Best Educational Project</a></li><li>2017: <a href="https://sites.google.com/view/ph11fall2019/home">Ph11 Scholar at Caltech</a></li><li>2016: <a href="https://www.nationalmerit.org/s/1758/start.aspx?sid=1758&amp;gid=2">National Merit Scholar</a></li></ul> -->
 
-                <h1 id="work-experience">Work experience</h1>
-                <ul>
-                    <li>.....</li>
-                </ul>
-                </li>
-                <li>.....<ul>
-                        <li>.....<ul>
-                                <li>.....</li>
-                            </ul>
-                        </li>
-                    </ul>
+                
+                
                     <h1 id="teaching">Teaching</h1>
                     <ul>
                         <div class="list__item">
@@ -246,10 +277,7 @@
                     </ul>
 
 
-                    <h1 id="service">Service</h1>
-
-                    <!--<ul><li>2021 October-December: <a href="https://crscience.org/educators/">CRS Science Ambassador</a>: Gave virtual science presentations to students at Washington Elementary, Richmond</li><li>2021 January-March: <a href="https://crscience.org/outreach/basdetails/">Virtual Be a Scientist Mentor</a>: Coached BUSD students through science projects weekly</li><li>2019-2020: <a href="https://donut.caltech.edu/lib/BoC_Reps">Caltech Board of Control</a>: Member of student panel adjudicating cases of academic dishonesty</li><li>2020 Spring: <a href="https://www.caltechy.org/rise-tutor">Caltech RISE Tutor</a>: Tutored underpriveleged high school students from Pasadena Unified School district.</li><li>2018: Chair of the Caltech Student Faculty Conference for Computer Science (SFC): Chaired a committee of students and faculty charged with making recommendations about the undergraduate computer science program at a conference of students and professors. <a href="https://docs.google.com/document/d/e/2PACX-1vQb_tiDPwxd7M485BCGHVAvNjsGADY5sjggVnvqRqZnQe6nzv4nwiHn_GUIIIiaATT2mj7qJ8WonOlf/pub">Here&#8217;s our final report.</a></li><li>Judge for the Following High School / Middle School Science Competitions<ul><li>2022 (Upcoming): <a href="https://acsef.zfairs.com/">Alameda County Science Fair</a></li><li>2021: <a href="http://www.usaypt.org/">USA Young Physicists Tournament</a></li><li>2020: Blair Middle School Science Fair</li></ul></li></ul></div></div>-->
-
+                    
 
                     <div class="page__footer">
                         <footer>
